@@ -6,28 +6,7 @@ dotenv.config();
 
 const client = new Twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 const conversationState: Record<string, { step: string; config?: any, data?: any }> = {};
-//const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 const router = Router();
-
-/* Request body example:
-{
-  SmsMessageSid: 'SM5fd81c607050e5a6349d9d376be12160',
-  NumMedia: '0',
-  ProfileName: 'Germán González',
-  MessageType: 'text',
-  SmsSid: 'SM5fd81c607050e5a6349d9d376be12160',
-  WaId: '5213310723661',
-  SmsStatus: 'received',
-  Body: 'Howdy',
-  To: 'whatsapp:+14155238886',
-  NumSegments: '1',
-  ReferralNumMedia: '0',
-  MessageSid: 'SM5fd81c607050e5a6349d9d376be12160',
-  AccountSid: 'ACaca1c90659ba3c848d22e89975741d3f',
-  From: 'whatsapp:+5213310723661',
-  ApiVersion: '2010-04-01'
-}
-*/
 
 router.post('/', async (req, res) => {
     const incomingMessage = req.body.Body?.toLowerCase().trim();
@@ -297,6 +276,3 @@ const sendMessageInteractive = async (to: string, interactive: any) => {
 };
 
 export default router;
-
-// https://smee.io/ninacodemx
-// https://timberwolf-mastiff-9776.twil.io/demo-reply
