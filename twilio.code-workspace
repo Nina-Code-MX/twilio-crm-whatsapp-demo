@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Twilio CRM WhatsApp Demo",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+		},
+		"editor.wordWrap": "on"
+	}
+}

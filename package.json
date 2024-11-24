@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "smee-client": "^2.0.4",
+    "twilio": "^5.3.6"
+  }
+}
