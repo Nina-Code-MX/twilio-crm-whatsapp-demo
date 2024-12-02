@@ -1,0 +1,8 @@
+{
+    "sms": {},
+    "voice": {
+        "goodbye": "Goodbye! I'm here if you need me.",
+        "unavailable": "Hola, soy Nina, tu asistente virtual. De momento no puedo atenderte, pero puedes dejarme un mensaje después de la señal. ¡Gracias!",
+        "welcome": "Welcome to NinaCode! I'm Nina, your personal coding assistant. How can I help you today?"
+    }
+}

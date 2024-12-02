@@ -1,0 +1,21 @@
+{
+    "crm": {
+        "initial": "*CRM*\nGracias por contactarnos!\n\nResponde con *solicitar* _Si deseas crear una solicitud._\nResponde *status* _Si deseas obtener el estado de una de tus solicitudes._",
+        "request": {
+            "cancelled": "Solicitud cancelada. Por favor comienza de nuevo. Di *hola* para empezar.",
+            "confirm_info": "Antes de continuar, por favor confirma los siguientes detalles:\n\nNombre del paciente: {{patientName}}\nTeléfono del paciente: {{patientPhone}}\nCorreo electrónico del paciente: {{patientEmail}}\nProducto: {{productName}}\n\nResponde con *si* para confirmar o *no* para empezar de nuevo.",
+            "created": "Solicitud creada. Este es tu número de orden: {{orderNumber}}",
+            "patient_email": "Por favor proporciona el correo electrónico del paciente: ",
+            "patient_name": "Por favor proporciona el nombre del paciente o adjunta la tarjeta de contacto desde WhatsApp: ",
+            "patient_phone": "Por favor proporciona el número de teléfono del paciente: ",
+            "unknown_patient_email": "Lo siento, no pudimos recuperar el correo electrónico del paciente. Por favor escribe el correo electrónico: ",
+            "unknown_patient_name": "Lo siento, no pudimos recuperar el nombre del paciente. Por favor escribe el nombre: ",
+            "unknown_option": "Lo siento, no entendí eso. Por favor comienza de nuevo.",
+            "unknown_patient_phone": "Lo siento, no pudimos recuperar el número de teléfono del paciente. Por favor escribe el número de teléfono: "
+        },
+        "status": {
+            "found": "Tu orden {{orderNumber}} está {{orderStatus}}",
+            "start": "Por favor proporciona tu número de orden: "
+        }
+    }
+}
