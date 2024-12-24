@@ -1,5 +1,5 @@
 import ninaCodeRouter from './ninacode';
 
 export {
-    ninaCodeRouter,
+    ninaCodeRouter as ninaCodeVoiceRouter,
 }

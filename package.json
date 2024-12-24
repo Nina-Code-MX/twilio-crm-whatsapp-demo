@@ -6,7 +6,10 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/knex": "^0.15.2",
+    "@types/mysql": "^2.15.26",
     "@types/node": "^22.10.1",
+    "@types/pg": "^8.11.10",
     "@types/twilio": "^3.19.2",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
@@ -15,11 +18,13 @@
   "dependencies": {
     "@types/i18next": "^12.1.0",
     "body-parser": "^1.20.3",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "i18n": "^0.15.1",
     "i18next": "^24.0.2",
-    "mysql2": "^3.11.5",
+    "knex": "^3.1.0",
+    "mysql2": "^3.12.0",
+    "pg": "^8.13.1",
     "smee-client": "^2.0.4",
     "twilio": "^5.3.6"
   }

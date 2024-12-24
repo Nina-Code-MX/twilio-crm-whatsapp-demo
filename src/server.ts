@@ -9,13 +9,13 @@ const ENV: string | undefined = process.env.NODE_ENV || 'development';
 
 app.listen(PORT, () => {
 
-    if (ENV === 'development') {
+    /*if (ENV === 'development') {
         const smee = new SmeeClient({
             source: "https://smee.io/ninacodemx",
-            target: `http://localhost:${PORT}/voice/ninacode`,
+            target: `http://localhost:${PORT}/sms/ninacode`,
             logger: console,
         });
     
         smee.start();
-    }
+    }*/
 });

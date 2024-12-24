@@ -14,6 +14,7 @@ const ninacodeRouter: Router = Router();
 const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
 ninacodeRouter.get('/', async (req, res) => {
+    console.log('aal', {...req})
     res.status(200).json({ message: 'Listening...' });
 });
 

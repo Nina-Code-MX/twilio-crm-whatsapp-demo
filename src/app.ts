@@ -1,8 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { crmRouter, sendColdMessageRouter } from './routes/whatsapp/index';
-import { ninaCodeRouter as ninaCodeVoiceRouter } from './routes/voice';
-import { ninaCodeRouter as ninaCodeSMSRouter } from './routes/sms';
+import { ninaCodeVoiceRouter } from './routes/voice/index';
+import { ninaCodeSMSRouter } from './routes/sms/index';
 
 const app = express();
 

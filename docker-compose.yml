@@ -1,0 +1,13 @@
+services:
+  db:
+    image: mariadb:10.5
+    container_name: twilio-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "${DOCKER_DB_PORT}:3306"
+    volumes:
+      - ./.build/mysql:/var/lib/mysql

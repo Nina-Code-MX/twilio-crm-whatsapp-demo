@@ -1,5 +1,5 @@
-import ninaCodeRouter from './ninacode';
+import ninaCodeSMSRouter from './ninacode';
 
 export {
-    ninaCodeRouter,
+    ninaCodeSMSRouter,
 }

@@ -132,3 +132,4 @@ dist
 # App
 dist/**
 .env
+.build/mysql
