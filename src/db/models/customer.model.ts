@@ -28,4 +28,17 @@ export default class Customers {
         }
     }
 
+    static async getUnsetByCampaign(campaignId: number): Promise<Customer[]> {
+        try {
+            return await db('customers')
+                .whereNotIn(
+                    'id', 
+                    db('tracking_campaigns').select('customer_id').where({ campaign_id: campaignId })
+                ) as Customer[];
+        } catch (error) {
+            console.error('Error finding unset customers by campaign: ', error);
+            return [];
+        }
+    }
+
 }
